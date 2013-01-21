@@ -1,0 +1,19 @@
+Requirements
+------------
+
+1. python
+2. python-argparse
+3. python-protobuf
+
+Typical installation steps on Debian
+------------------------------------
+1. apt-get install python-protobuf python-argparse
+2. dpkg -i python-hsn2-proto_*.deb
+3. dpkg -i hsn2-console_*.deb
+
+Usage
+-----
+1. edit /etc/hsn2/console.conf file (point to correct framework host/port)
+   or use -c option with own config file
+2. use 'hc' command (installed in /opt/hsn2/console/)
+   $hc --help

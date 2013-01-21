@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Cache library
+if [ "$1" = "configure" ]
+then
+    rm -f "/usr/bin/hc"
+    ln -s /opt/hsn2/console/hc.py /usr/bin/hc
+fi

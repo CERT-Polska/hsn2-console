@@ -1,0 +1,8 @@
+Package: hsn2-console
+Version: {VER}
+Section: unknown
+Priority: optional
+Architecture: all
+Depends: python-hsn2-proto, python-pika, python-hsn2-lib
+Maintainer: Juliusz Brzostek (juliusz.brzostek@cert.pl)
+Description: HSN2 Command Line Interface.
