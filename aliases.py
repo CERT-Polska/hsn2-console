@@ -26,6 +26,7 @@ class Aliases():
 			'workflow' : 'w',
 			'config' : 'c',
 			'ping' : 'p',
+			'results' : 'r',
 		}
 
 		self.subCommandAliases = {
@@ -46,7 +47,12 @@ class Aliases():
 				'config' : {
 					'set' : 's',
 					'get' : 'g'
-				}
+				},
+				'results' : {
+					'list' : 'l',
+					'deploy' : 'd',
+					'summary' : 'u',
+				},
 		}
 
 		self.commandFullNames = dict(zip(self.commandAliases.values(),self.commandAliases.keys()))
