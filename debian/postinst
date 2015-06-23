@@ -1,8 +1,7 @@
-#!/bin/sh
+#!/bin/bash -e
 
-# Cache library
-if [ "$1" = "configure" ]
-then
-    rm -f "/usr/bin/hc"
-    ln -s /opt/hsn2/console/hc.py /usr/bin/hc
+if [[ "$1" == "configure" ]]; then
+	chmod +x /usr/lib/python2.7/dist-packages/hsn2_console/hc.py
 fi
+
+#DEBHELPER#

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 case "$1" in
     purge|remove|upgrade|disappear)
@@ -8,3 +8,5 @@ case "$1" in
     *)
     ;;
 esac
+
+#DEBHELPER#
