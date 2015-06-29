@@ -17,17 +17,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
-sys.path.append("/opt/hsn2/python/commlib")
-import logging
-import argparsealiases as argparse
 import ConfigParser
-from aliases import Aliases
+import logging
+import sys
 
-from hsn2bus import Bus
-from hsn2bus import BusException
-from hsn2bus import BusTimeoutException
-from hsn2cmd import CommandDispatcher
+from aliases import Aliases
+from hsn2_commons import argparsealiases as argparse
+from hsn2_commons.hsn2bus import Bus
+from hsn2_commons.hsn2bus import BusException
+from hsn2_commons.hsn2bus import BusTimeoutException
+from hsn2_commons.hsn2cmd import CommandDispatcher
+
 
 # ------------------------------
 # Setup logging
