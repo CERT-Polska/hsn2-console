@@ -2,7 +2,7 @@
 
 case "$1" in
     purge|remove|upgrade|disappear)
-        pyclean -p hsn2-console
+        pyclean -p python-hsn2-console
     ;;
 
     *)
