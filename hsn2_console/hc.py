@@ -138,7 +138,6 @@ def main():
 
     # Main
     try:
-        fwkBus.openFwChannel()
         logger.debug("Connected to the bus.");
         disp = CommandDispatcher(fwkBus, logger, cliargs, config)
         disp.dispatch(cliargs.command, aliases)
