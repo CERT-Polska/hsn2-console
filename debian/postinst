@@ -1,7 +1,12 @@
 #!/bin/bash -e
 
+. /lib/hsn2/conf-functions
+
 if [[ "$1" == "configure" ]]; then
 	chmod +x /usr/lib/python2.7/dist-packages/hsn2_console/hc.py
+	
+	setConfigValueFromDb server hsn2-console/broker /etc/hsn2/console.conf
+	db_stop
 fi
 
 #DEBHELPER#

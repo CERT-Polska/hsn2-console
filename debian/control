@@ -7,5 +7,5 @@ Standards-Version: 3.9.3
 
 Package: python-hsn2-console
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-hsn2-commons
+Depends: ${misc:Depends}, ${python:Depends}, python-hsn2-commons, hsn2-commons-debian
 Description: HSN2 Command Line Interface.
